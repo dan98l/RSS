@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="MhX-9e-mus" customClass="ArticleCell" customModule="RSS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MhX-9e-mus" id="K7a-BZ-VhG">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRm-as-Ga8">
+                        <rect key="frame" x="8" y="2" width="404" height="39.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="0.75735323960000001" blue="0.51040564720000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="IRm-as-Ga8" secondAttribute="bottom" constant="2" id="54n-YX-ZiR"/>
+                    <constraint firstAttribute="trailing" secondItem="IRm-as-Ga8" secondAttribute="trailing" constant="2" id="CCl-rn-EwR"/>
+                    <constraint firstItem="IRm-as-Ga8" firstAttribute="top" secondItem="K7a-BZ-VhG" secondAttribute="top" constant="2" id="V1g-7F-Q5P"/>
+                    <constraint firstItem="IRm-as-Ga8" firstAttribute="leading" secondItem="K7a-BZ-VhG" secondAttribute="leading" constant="8" id="qfI-hT-g5P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleNews" destination="IRm-as-Ga8" id="ZWi-9G-l2C"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
